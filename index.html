@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/responsive.css">
+  <link rel="icon" href="IMG/icon.jpeg">
+  <script src="JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+
+
+  <title>Roaming 🚍</title>
+</head>
+
+<body>
+  <div class="background" style="width: 100%;"></div>
+  <div class="title">
+    <a href="index.html">
+      <h1>ROAMING</h1>
+    </a>
+    <h2>GET YOUR TICKET HUSTLE FREE</h2>
+  </div>
+  <div class="nav">
+    <ul>
+      <li> <a href="index.html">Home</a></li>
+      <li><a href="">Routes</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="bus-image">
+    <div class="bus"></div>
+  </div>
+  <div class="Booking">
+    <h1>Book Tickets</h1>
+    <br>
+    <form id="form">
+      <table>
+        <tr>
+          <td>Bus Routes:</td>
+          <td><select id="bus-routes" required></select></td>
+        </tr>
+        <tr>
+          <td>From:</td>
+          <td><select id="from" required></select></td>
+        </tr>
+        <tr>
+          <td>To:</td>
+          <td><select id="to" required></select></td>
+        </tr>
+        <tr>
+          <td>No. of Tickets: <br> <span>(Max.5)</span></td>
+          <td><select id="num-tickets" required></select></td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td><input type="datetime-local" id="datetime" name="datetime" value="{{currentdatetime()}}" readonly>
+          </td>
+        </tr>
+        <tr>
+          <td>Mobile Number:</td>
+          <td><input type="number" id="mobile" required></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button id="submit">SUBMIT</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type="reset">RESET</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  </div>
+
+  <div class="ticket">
+    <div class="e-ticket">
+      <div class="ticket-info">
+      </div>
+      <div class="buttons">
+        <button id="downloadButton" style="display: none;">Download Ticket</button>
+        <button id="backButton" style="display: none;"><a href="index.html"
+            style="text-decoration: none; color: white;">Back</a></button>
+      </div>
+    </div>
+
+
+</body>
+
+</html>
